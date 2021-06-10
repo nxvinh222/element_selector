@@ -29,6 +29,7 @@ function ElementSelector({ setClickedElement }) {
 
   return (
     <div className="col-8" >
+      <div className="h3">Element Selector</div>
       <iframe
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
         // src="https://vneco nomy.vn/"

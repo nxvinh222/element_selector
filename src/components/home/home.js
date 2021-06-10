@@ -31,12 +31,10 @@ function Home() {
 
   return (
     <div className="row">
-      <Helmet>
-        <script src="http://lovasoa.github.io/tidy-html5/tidy.js" type="text/javascript" />
-      </Helmet>
       <ElementSelector setClickedElement={handleClickElement} />
-      <div className="">
-        <pre>
+      <div className="mt-7" >
+        <div className="h3">HTML</div>
+        <pre style={{ height: "500px" }}>
           <code>{html(clickedElement, { indent_size: 4, space_in_empty_paren: true })}</code>
         </pre>
       </div>
