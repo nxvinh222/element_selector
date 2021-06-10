@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import 'styles/iframe.css'
+// import $ from 'jquery'
 
-function ElementSelector(props) {
-
+function ElementSelector({ setClickedElement }) {
+  var previousElement;
   const handleClick = () => {
     var iframe = document.getElementsByTagName('iframe')[0],
       iDoc = iframe.contentWindow
@@ -12,14 +13,22 @@ function ElementSelector(props) {
       iDoc = iDoc.document;
       iDoc.body.addEventListener('contextmenu', function (event) {
         event.preventDefault()
-        console.log(event.target);
+        if (previousElement != undefined) {
+          console.log(previousElement)
+          previousElement.style.outline = "white"
+        }
+        previousElement = event.target.parentNode.parentNode
+        event.target.parentNode.parentNode.style.outline = "solid blue 1px";
+        console.log(event.target.parentNode.parentNode);
+        setClickedElement(event.target.parentElement)
+
       });
     };
   }
 
 
   return (
-    <div>
+    <div className="col-8" >
       <iframe
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
         // src="https://vneco nomy.vn/"
