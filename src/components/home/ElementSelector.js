@@ -34,7 +34,7 @@ function ElementSelector({ setClickedElement }) {
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
         // src="https://vneco nomy.vn/"
         src="/destination_page/vneconomy_tieudiem.html"
-        width="80vh" height="200" frameborder="0" scrolling="auto" className="frame-area"
+        width="80vh" height="200" frameBorder="0" scrolling="auto" className="frame-area"
         id="myFrame"
         onLoad={handleClick}
       >
