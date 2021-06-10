@@ -1,7 +1,6 @@
 import ElementSelector from './ElementSelector'
 import React, { useState, useEffect, useCallback } from 'react'
 import { html, beautify } from 'js-beautify'
-// import { tidy_html5 } from './tidy'
 
 function Home() {
   const [clickedElement, setClickedElement] = useState("Select an element!!!")
