@@ -1,6 +1,5 @@
 import ElementSelector from './ElementSelector'
 import React, { useState, useEffect, useCallback } from 'react'
-import { Helmet } from "react-helmet";
 import { html, beautify } from 'js-beautify'
 // import { tidy_html5 } from './tidy'
 
