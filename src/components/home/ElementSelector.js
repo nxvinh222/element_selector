@@ -32,8 +32,9 @@ function ElementSelector({ setClickedElement }) {
       <div className="h3">Element Selector</div>
       <iframe
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-        // src="https://vneco nomy.vn/"
-        src="/destination_page/vneconomy_tieudiem.html"
+        // src="/destination_page/vneconomy_tieudiem.html"
+        src="/destination_page/des.html"
+        // src="public\vneconomy\site folder\vneconomy.vn\d235bda9__tieu-diem.html"
         width="80vh" height="200" frameBorder="0" scrolling="auto" className="frame-area"
         id="myFrame"
         onLoad={handleClick}
